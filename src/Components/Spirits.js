@@ -1,24 +1,33 @@
 import React, { Component } from 'react';
-import { HashRouter as Router, Route, Link, Switch } from "react-router-dom";
-import Cocktail from './Cocktail';
-import SpiritsList from './SpiritsList';
+import { Link } from "react-router-dom";
 
-
-
-export default class Spirits extends Component {
+export default class SpiritsList extends Component {
     render(){
         return (
             <div>
-                <Router>
-                    <Switch>
-                        <Route path={"/"} exact component={SpiritsList} />
-                        <Route
-                            path={"/cocktail"}
-                            render={props => <Cocktail {...props}/>} >
-                        </Route>
-                    </Switch>
-                </Router>
+                <p>Choose your main ingredient:</p>
+              <ul>
+
+                  <li key="Vodka" >
+                    <Link to={{
+                        pathname: "/cocktail",
+                        mainIngredient: "vodka"
+                    }}>
+                        Vodka
+                    </Link>
+                  </li>
+
+                  <li key="Gin" >
+                    <Link to={{
+                        pathname: "/cocktail",
+                        mainIngredient: "gin"
+                    }}>
+                        Gin
+                    </Link>
+                  </li>
+
+              </ul>
             </div>
-        );
+        )
     }
 }
