@@ -20,7 +20,7 @@ export default class Cocktail extends Component {
   }
 
   render() {
-    if (this.state.recipe.strDrink === undefined) {
+    if (this.state.recipe.name === undefined) {
       return <div>loading...</div>;
     } else {
       return (
@@ -28,18 +28,25 @@ export default class Cocktail extends Component {
           <p>Main ingredient: {this.props.location.mainIngredient}</p>
 
           <div>
-            <p>Cocktail name: {this.state.recipe.strDrink}</p>
+            <p>Cocktail name: {this.state.recipe.name}</p>
 
-            <img src={this.state.recipe.strDrinkThumb} width="300px"></img>
+            <img src={this.state.recipe.thumbnail} alt={this.state.recipe.name} width="300px"></img>
+
+            <div>
+              Ingredients:
+              <ul>
+                {this.state.recipe.ingredients.map((item, index) => {
+                  return <li key={index}>{item.measure} {item.name}</li>;
+                })}
+              </ul>
+            </div>
 
             <div>
               Recipe:
               <ol>
-                {this.state.recipe.strInstructions
-                  .split(". ")
-                  .map((item) => {
-                    return <li>{item}</li>;
-                  })}
+                {this.state.recipe.instructions.map((item, index) => {
+                  return <li key={index}>{item}</li>;
+                })}
               </ol>
             </div>
           </div>
