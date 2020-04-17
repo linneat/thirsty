@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import './Spirits.css';
 
 export default class Spirits extends Component {
   render() {
@@ -7,6 +8,7 @@ export default class Spirits extends Component {
 
     return (
       <div>
+        <h1 className="title">Random cocktail generator</h1>
         <p>Choose your main ingredient:</p>
         <ul>
           {ingredients.map((ingredient, index) => {

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import Cocktail from './Cocktail';
 import Spirits from './Spirits';
+import './Home.css';
 
 
 

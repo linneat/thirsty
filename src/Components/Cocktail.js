@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import margarita from './margarita.json';
+import './Cocktail.css';
 
 export default class Cocktail extends Component {
   constructor(props) {
