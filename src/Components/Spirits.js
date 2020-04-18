@@ -8,8 +8,13 @@ export default class Spirits extends Component {
 
     return (
       <div>
-        <h1 className="title">Random cocktail generator</h1>
-        <p>Choose your main ingredient:</p>
+        <h1 className="title">Thirsty ?</h1>
+        <p className="slogan">Be brave and make a random cocktail</p>
+        <div className="ingredientListWrapper">
+          <div className="ingredientListHeader">
+        <h2>Choose your main ingredient:</h2>
+        </div>
+        <div className="ingredientList">
         <ul>
           {ingredients.map((ingredient, index) => {
             return (
@@ -26,6 +31,8 @@ export default class Spirits extends Component {
             );
           })}
         </ul>
+        </div>
+        </div>
       </div>
     );
   }

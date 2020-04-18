@@ -1,11 +1,26 @@
-
-
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Comfortaa&display=swap");
 .title{
-    font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: blue;
+    font-size: 36px;
+    font-family: Montserrat;
+    color: rgb(54, 55, 58);
+    margin-top: 10vh;
+}
+
+.slogan{
+    font-size: 20px;
+    font-family: Comfortaa;
+    font-style: italic;
+    color: rgb(54, 55, 58);
+    margin-top: 10vh;
+
+}
+
+h2{
+    font-family: Roboto Condensed;
 }
 
 body{
-    background-color: blueviolet;
+    background-color: rgb(215, 223, 222);
 }

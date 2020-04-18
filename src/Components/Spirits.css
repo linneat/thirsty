@@ -1,0 +1,28 @@
+
+
+.ingredientListWrapper{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 70%;
+    margin: auto;
+    margin-top: 20vh;
+    border-radius: 8px;
+}
+
+.ingredientListHeader{
+    font-size: 3vw;
+}
+
+.ingredientList a {
+    text-decoration: none;
+}
+
+
+.ingredientList ul{
+    font-size: 3vw;
+    list-style-type: none;
+    padding-inline-start: 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
