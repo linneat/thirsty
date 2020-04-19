@@ -7,7 +7,7 @@
 
 
 
-.App-header {
+/*.App-header /*{
   background-color: #282c34;
   min-height: 7vh;
   display: flex;
@@ -16,6 +16,9 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
+}*/
 
+body{
+  background-color: rgb(215, 223, 222);
+}
 

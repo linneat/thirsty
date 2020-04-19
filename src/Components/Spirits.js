@@ -1,37 +1,56 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import './Spirits.css';
+import MainIngredient from "./MainIngredient";
+import "./Spirits.css";
 
 export default class Spirits extends Component {
   render() {
-    const ingredients = ["Vodka", "Gin", "Whiskey", "Rum", "Cognac", "Brandy"];
-
     return (
       <div>
         <h1 className="title">Thirsty ?</h1>
-        <p className="slogan">Be brave and make a random cocktail</p>
+        <p className="slogan">Get a random cocktail recipe</p>
+
         <div className="ingredientListWrapper">
           <div className="ingredientListHeader">
-        <h2>Choose your main ingredient:</h2>
-        </div>
-        <div className="ingredientList">
-        <ul>
-          {ingredients.map((ingredient, index) => {
-            return (
-              <li key={ingredient}>
-                <Link
-                  to={{
-                    pathname: "/cocktail",
-                    mainIngredient: ingredient
-                  }}
-                >
-                  {ingredient}
-                </Link>
-              </li>
-            );
-          })}
-        </ul>
-        </div>
+            <h2>Choose your main ingredient:</h2>
+          </div>
+
+          <div className="ingredientList">
+            <div className="row">
+              <div className="column">
+                <div className="ingedientName">
+                <MainIngredient name="Vodka"/>
+                </div>
+              </div>
+              <div className="column">
+              <div className="ingedientName">
+                <MainIngredient name="Gin"/>
+                </div>
+              </div>
+              <div className="column">
+              <div className="ingedientName">
+                <MainIngredient name="Whiskey"/>
+                </div>
+              </div>
+            </div>
+
+            <div className="row">
+              <div className="column">
+              <div className="ingedientName">
+                <MainIngredient name="Rum"/>
+                </div>
+              </div>
+              <div className="column">
+              <div className="ingedientName">
+                <MainIngredient name="Cognac"/>
+                </div>
+              </div>
+              <div className="column">
+              <div className="ingedientName">
+                <MainIngredient name="Brandy"/>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     );

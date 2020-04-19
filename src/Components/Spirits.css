@@ -1,4 +1,26 @@
 
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Comfortaa&display=swap");
+.title{
+    font-size: 40px;
+    font-family: Montserrat;
+    color: rgb(15, 15, 15);
+    margin-top: 13vh;
+}
+
+.slogan{
+    font-size: 20px;
+    font-family: Comfortaa;
+    font-style: italic;
+    color: rgb(54, 55, 58);
+    margin-top: 5vh;
+
+}
+
+h2{
+    font-family: Roboto Condensed;
+}
 
 .ingredientListWrapper{
     display: flex;
@@ -6,23 +28,50 @@
     background-color: white;
     width: 70%;
     margin: auto;
-    margin-top: 20vh;
+    margin-top: 15vh;
     border-radius: 8px;
+    padding: 8vw;
+    padding-top: 0%;
 }
 
 .ingredientListHeader{
-    font-size: 3vw;
+    font-size: 3vh;
+    margin-top: 0%;
+    
 }
 
 .ingredientList a {
     text-decoration: none;
 }
 
-
-.ingredientList ul{
-    font-size: 3vw;
-    list-style-type: none;
-    padding-inline-start: 0px;
-    display: flex;
-    flex-wrap: wrap;
+.ingredientList{
+    margin-top: 2vh;
 }
+
+.ingedientName{
+    display: flex;
+    align-self: center;
+    padding-top: 2vh;
+    padding-bottom: 4vh;
+    font-size: 3vh;
+    font-family: Roboto Condensed;
+    color:rgb(54, 55, 58);;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+  }
+
+  .ingedientName{
+      padding-bottom: 3vh;
+  }
