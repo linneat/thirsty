@@ -28,10 +28,11 @@ h2{
     background-color: white;
     width: 70%;
     margin: auto;
-    margin-top: 15vh;
+    margin-top: 11vh;
     border-radius: 8px;
     padding: 8vw;
-    padding-top: 0%;
+    padding-top: 3%;
+    padding-bottom: 6%;
 }
 
 .ingredientListHeader{
@@ -42,20 +43,31 @@ h2{
 
 .ingredientList a {
     text-decoration: none;
+    color:rgb(54, 55, 58);
+
 }
+
+.ingredientList a:hover{
+    color:rgb(138, 138, 139);
+}
+
+
 
 .ingredientList{
     margin-top: 2vh;
 }
 
 .ingedientName{
-    display: flex;
-    align-self: center;
-    padding-top: 2vh;
-    padding-bottom: 4vh;
-    font-size: 3vh;
+    padding-top: 2.5vh;
+    padding-bottom: 5vh;
+    font-size: 3.5vh;
     font-family: Roboto Condensed;
     color:rgb(54, 55, 58);;
+    border-width: thin;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    margin-top: 3vh;
+    border-radius: 10px;
 }
 
 .row {
