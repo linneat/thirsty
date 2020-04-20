@@ -98,24 +98,29 @@ export default class Cocktail extends Component {
     } else {
       return (
         <div>
-          <p>Main ingredient: {this.props.location.mainIngredient}</p>
+          
 
           <div>
             <p>Cocktail name: {this.state.recipe.name}</p>
+            <p>With the main ingredient: {this.props.location.mainIngredient}</p>
 
             <img src={this.state.recipe.thumbnail} alt={this.state.recipe.name} width="300px"></img>
 
-            <div>
-              Ingredients:
+            <div className="ingredientsList">
+              
+              <h2>Ingredients:</h2>
+              <div className="listWrapper">
               <ul>
                 {this.state.recipe.ingredients.map((item, index) => {
-                  return <li key={index}>{item.measure} {item.name}</li>;
+                  return <li key={index}><span>{item.measure} {item.name}</span></li>;
                 })}
+              
               </ul>
+              </div>
             </div>
 
-            <div>
-              Recipe:
+            <div className="recipeList">
+              <h2>Recipe:</h2>
               <ol>
                 {this.state.recipe.instructions.map((item, index) => {
                   return <li key={index}>{item}</li>;

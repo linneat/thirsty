@@ -1,0 +1,44 @@
+
+
+.ingredientsList li{
+   text-align: left;
+} 
+
+.ingredientsList ul{
+    display: flex;
+    flex-direction: column;
+    padding-inline-start: 20%;
+    
+}
+
+/* .ingredientsList li span {
+    position: relative;
+    left: -20px;
+} */
+
+.ingredientsList{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+.listWrapper{
+    width: 50%;
+    display: flex;
+    align-self: center;
+
+}
+
+.recipeList{
+    margin-bottom: 2%;
+    margin-top: 2%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+}

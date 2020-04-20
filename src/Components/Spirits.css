@@ -18,9 +18,7 @@
 
 }
 
-h2{
-    font-family: Roboto Condensed;
-}
+
 
 .ingredientListWrapper{
     display: flex;
@@ -30,8 +28,8 @@ h2{
     margin: auto;
     margin-top: 11vh;
     border-radius: 8px;
-    padding: 8vw;
-    padding-top: 3%;
+    padding: 6vw;
+    padding-top: 2%;
     padding-bottom: 6%;
 }
 
