@@ -120,9 +120,9 @@ export default class Cocktail extends Component {
                 })}
               
               </ul>
-              
+              </div>
             </div>
-
+            <div className="columnPicAndListsWrapper">
             <div className="recipeList">
 
               <h2>Recipe:</h2>

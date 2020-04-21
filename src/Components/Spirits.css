@@ -90,6 +90,17 @@
 /* responsive*/
 /* for phones max-width 414px --> the biggest iphones */
 @media screen and (max-width: 414px) {
+    .title{
+        margin-top: 8vh;
+    }
+    
+    .row{
+        flex-direction: column;
+    }
+
+    h2{
+        font-size: 4vh;
+    }
 }
 
 
