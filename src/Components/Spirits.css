@@ -28,9 +28,9 @@
     margin: auto;
     margin-top: 11vh;
     border-radius: 8px;
-    padding: 6vw;
+    padding: 5vw;
     padding-top: 2%;
-    padding-bottom: 6%;
+    padding-bottom: 5%;
 }
 
 .ingredientListHeader{
@@ -93,7 +93,7 @@
     .title{
         margin-top: 8vh;
     }
-    
+
     .row{
         flex-direction: column;
     }
@@ -107,11 +107,34 @@
 
 /* for phones max-width 1024px --> for ipads*/
 @media screen and (min-device-width: 415px) and (max-width: 1024px) {
+    .title {
+        font-size: 62px;
+    }
+
+    .ingredientListHeader {
+        font-size: 26px;
+       
+    }
+
+    h2 {
+        margin-bottom: 2%;
+    }
+
+    .slogan {
+        font-size: 25px;
+    }
 }
 
 
 /* ipad pro*/
 @media screen and (min-device-width: 769px) and (max-width: 1024px) {
+    .title {
+        font-size: 60px;
+    }
+
+    .slogan {
+        font-size: 28px;
+    }
 }
 
 /*random size of screen between mobile size and ipad size*/
