@@ -1,83 +1,123 @@
-
-.cocktailName{
-    padding-top: 4%;
-    font-family: Montserrat;
-    margin-block-start: 1%;
+.cocktailName {
+  padding-top: 4%;
+  font-family: Montserrat;
+  margin-block-start: 1%;
 }
 
-.withMainIngredient{
-    font-family: Montserrat;
-    margin-block-start: 1%;
-    margin-block-end: 5%;
+.withMainIngredient {
+  font-family: Montserrat;
+  margin-block-start: 1%;
+  margin-block-end: 5%;
 }
 
-.picture{
-    width: 50%;
-    border-radius: 8px;
+.PicAndListWrapper {
+  display: flex;
+  margin: auto;
+  margin-bottom: 4%;
 }
 
-.ingredientsList li{
-   text-align: left;
-   padding-left: 3%;
-   padding-bottom: 3%;
-   font-family: Roboto Condensed;
-} 
-
-.ingredientsList ul{
-    display: flex;
-    flex-direction: column;
-    padding-inline-end: 12%;
-    padding-inline-start: 37%;
+.columnPicAndListsWrapper {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  align-items: center;
 }
 
-
-.ingredientsList{
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    margin: auto;
-    margin-bottom: 2%;
-    margin-top: 2%;
-    border-radius: 8px;
+.picture {
+  width: 90%;
+  border-radius: 8px;
 }
 
-
-.recipeList{
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    margin: auto;
-    border-radius: 8px;
-    margin-bottom: 2%;
-    margin-top: 2%;
+.ingredientsList li {
+  text-align: left;
+  padding-left: 3%;
+  padding-bottom: 3%;
+  font-family: Roboto Condensed;
 }
 
-.recipeList ol{ 
-    padding-inline-end: 12%;
-    padding-inline-start: 20%;
+.ingredientsList ul {
+  display: flex;
+  flex-direction: column;
+  padding-inline-end: 12%;
+  padding-inline-start: 37%;
 }
 
-.recipeList li{
-    text-align: left;
-    padding-left: 3%;
-    padding-bottom: 3%;
-    font-family: Roboto Condensed;
- } 
+.ingredientsList {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin-bottom: 2%;
+  border-radius: 8px;
+}
 
+.recipeList {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  border-radius: 8px;
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
 
- /* responsive*/
+.recipeList ol {
+  padding-inline-end: 12%;
+  padding-inline-start: 20%;
+}
+
+.recipeList li {
+  text-align: left;
+  padding-left: 3%;
+  padding-bottom: 3%;
+  font-family: Roboto Condensed;
+}
+
+/* responsive*/
 /* for phones max-width 414px --> the biggest iphones */
 @media screen and (max-width: 414px) {
+    .cocktailName {
+        margin-bottom: 2%;
+        font-size: 9.5vw;
+    }
+
+  .PicAndListWrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4%;
+  }
+
+  .picture {
+    width: 70%;
+    border-radius: 8px;
+    margin-top: 3%;
+    margin-bottom: 5%;
+  }
+
+  .ingredientsList {
+    width: 70%;
+    margin-bottom: 5%;
+  }
+
+  .recipeList {
+    width: 70%;
+    margin-bottom: 5%;
+    margin-top: 0%;
+  }
+  
+.ingredientsList ul {
+    padding-inline-end: 12%;
+    padding-inline-start: 20%;
+  }
+
+h2{
+    margin-bottom: 0%;
 }
-
-
+}
 
 /* for phones max-width 1024px --> for ipads*/
 @media screen and (min-device-width: 415px) and (max-width: 1024px) {
 }
-
 
 /* ipad pro*/
 @media screen and (min-device-width: 769px) and (max-width: 1024px) {
@@ -85,4 +125,4 @@
 
 /*random size of screen between mobile size and ipad size*/
 @media screen and (min-device-width: 415px) and (max-width: 680px) {
-}  
+}
