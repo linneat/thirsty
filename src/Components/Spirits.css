@@ -85,3 +85,24 @@
   .ingedientName{
       padding-bottom: 3vh;
   }
+
+
+/* responsive*/
+/* for phones max-width 414px --> the biggest iphones */
+@media screen and (max-width: 414px) {
+}
+
+
+
+/* for phones max-width 1024px --> for ipads*/
+@media screen and (min-device-width: 415px) and (max-width: 1024px) {
+}
+
+
+/* ipad pro*/
+@media screen and (min-device-width: 769px) and (max-width: 1024px) {
+}
+
+/*random size of screen between mobile size and ipad size*/
+@media screen and (min-device-width: 415px) and (max-width: 680px) {
+}  

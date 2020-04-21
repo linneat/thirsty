@@ -1,20 +1,35 @@
 
+.cocktailName{
+    padding-top: 4%;
+    font-family: Montserrat;
+    margin-block-start: 1%;
+}
+
+.withMainIngredient{
+    font-family: Montserrat;
+    margin-block-start: 1%;
+    margin-block-end: 5%;
+}
+
+.picture{
+    width: 50%;
+    border-radius: 8px;
+}
 
 .ingredientsList li{
    text-align: left;
+   padding-left: 3%;
+   padding-bottom: 3%;
+   font-family: Roboto Condensed;
 } 
 
 .ingredientsList ul{
     display: flex;
     flex-direction: column;
-    padding-inline-start: 20%;
-    
+    padding-inline-end: 12%;
+    padding-inline-start: 37%;
 }
 
-/* .ingredientsList li span {
-    position: relative;
-    left: -20px;
-} */
 
 .ingredientsList{
     background-color: white;
@@ -24,21 +39,50 @@
     margin: auto;
     margin-bottom: 2%;
     margin-top: 2%;
+    border-radius: 8px;
 }
 
-.listWrapper{
-    width: 50%;
-    display: flex;
-    align-self: center;
-
-}
 
 .recipeList{
-    margin-bottom: 2%;
-    margin-top: 2%;
     background-color: white;
     display: flex;
     flex-direction: column;
     width: 50%;
     margin: auto;
+    border-radius: 8px;
+    margin-bottom: 2%;
+    margin-top: 2%;
 }
+
+.recipeList ol{ 
+    padding-inline-end: 12%;
+    padding-inline-start: 20%;
+}
+
+.recipeList li{
+    text-align: left;
+    padding-left: 3%;
+    padding-bottom: 3%;
+    font-family: Roboto Condensed;
+ } 
+
+
+ /* responsive*/
+/* for phones max-width 414px --> the biggest iphones */
+@media screen and (max-width: 414px) {
+}
+
+
+
+/* for phones max-width 1024px --> for ipads*/
+@media screen and (min-device-width: 415px) and (max-width: 1024px) {
+}
+
+
+/* ipad pro*/
+@media screen and (min-device-width: 769px) and (max-width: 1024px) {
+}
+
+/*random size of screen between mobile size and ipad size*/
+@media screen and (min-device-width: 415px) and (max-width: 680px) {
+}  

@@ -101,10 +101,11 @@ export default class Cocktail extends Component {
           
 
           <div>
-            <p>Cocktail name: {this.state.recipe.name}</p>
-            <p>With the main ingredient: {this.props.location.mainIngredient}</p>
-
-            <img src={this.state.recipe.thumbnail} alt={this.state.recipe.name} width="300px"></img>
+            <div className="drinkPresentation">
+            <h1 className="cocktailName">{this.state.recipe.name}</h1>
+            <p className="withMainIngredient">With the main ingredient: {this.props.location.mainIngredient}</p>
+            </div>
+            <img src={this.state.recipe.thumbnail} alt={this.state.recipe.name} className="picture" ></img>
 
             <div className="ingredientsList">
               
@@ -112,7 +113,7 @@ export default class Cocktail extends Component {
               <div className="listWrapper">
               <ul>
                 {this.state.recipe.ingredients.map((item, index) => {
-                  return <li key={index}><span>{item.measure} {item.name}</span></li>;
+                  return <li key={index}>{item.measure} {item.name}</li>;
                 })}
               
               </ul>
@@ -120,6 +121,7 @@ export default class Cocktail extends Component {
             </div>
 
             <div className="recipeList">
+
               <h2>Recipe:</h2>
               <ol>
                 {this.state.recipe.instructions.map((item, index) => {
