@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import margarita from "./margarita.json";
 import "./Cocktail.css";
+import { Link } from "react-router-dom";
 
 export default class Cocktail extends Component {
   constructor(props) {
@@ -106,6 +107,9 @@ export default class Cocktail extends Component {
         <div>
           <div>
             <div className="drinkPresentation">
+              <div className="back">
+                <Link to="/">back</Link>
+              </div>
               <h1 className="cocktailName">{this.state.recipe.name}</h1>
               <p className="withMainIngredient">
                 With the main ingredient: {this.props.location.mainIngredient}

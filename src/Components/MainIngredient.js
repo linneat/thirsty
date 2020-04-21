@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default class Cocktail extends Component {
   render() {
     return (
-      <div>
+      <button className="ingedientName">
         <Link
           to={{
             pathname: "/cocktail",
@@ -13,7 +13,7 @@ export default class Cocktail extends Component {
         >
           {this.props.name}
         </Link>
-      </div>
+      </button>
     );
   }
 }

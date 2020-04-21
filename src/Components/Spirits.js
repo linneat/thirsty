@@ -17,37 +17,24 @@ export default class Spirits extends Component {
           <div className="ingredientList">
             <div className="row">
               <div className="column">
-              <button className="ingedientName">
-                <MainIngredient name="Vodka"/>
-                </button>
+                <MainIngredient name="Vodka" />
               </div>
               <div className="column">
-              <button className="ingedientName">
-                <MainIngredient name="Gin"/>
-                </button>
+                <MainIngredient name="Gin" />
               </div>
               <div className="column">
-              <button className="ingedientName">
-                <MainIngredient name="Whiskey"/>
-                </button>
+                <MainIngredient name="Whiskey" />
               </div>
             </div>
-
             <div className="row">
               <div className="column">
-              <button className="ingedientName">
-                <MainIngredient name="Rum"/>
-                </button>
+                <MainIngredient name="Rum" />
               </div>
               <div className="column">
-              <button className="ingedientName">
-                <MainIngredient name="Cognac"/>
-                </button>
+                <MainIngredient name="Cognac" />
               </div>
               <div className="column">
-              <button className="ingedientName">
-                <MainIngredient name="Brandy"/>
-                </button>
+                <MainIngredient name="Brandy" />
               </div>
             </div>
           </div>
