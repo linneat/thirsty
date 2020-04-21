@@ -92,6 +92,7 @@
 @media screen and (max-width: 414px) {
     .title{
         margin-top: 8vh;
+        font-size: 35px;
     }
 
     .row{
@@ -99,7 +100,15 @@
     }
 
     h2{
-        font-size: 4vh;
+        font-size: 3.4vh;
+    }
+
+    .ingedientName{
+        font-size: 3vh;
+    }
+
+    .ingredientListWrapper {
+        width: 65%;
     }
 }
 
@@ -108,7 +117,7 @@
 /* for phones max-width 1024px --> for ipads*/
 @media screen and (min-device-width: 415px) and (max-width: 1024px) {
     .title {
-        font-size: 62px;
+        font-size: 45px;
     }
 
     .ingredientListHeader {
@@ -129,11 +138,15 @@
 /* ipad pro*/
 @media screen and (min-device-width: 769px) and (max-width: 1024px) {
     .title {
-        font-size: 60px;
+        font-size: 40px;
     }
 
     .slogan {
-        font-size: 28px;
+        font-size: 20px;
+    }
+
+    h2{
+        font-size: 23px;
     }
 }
 

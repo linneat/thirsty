@@ -80,6 +80,7 @@ li {
 /* for phones max-width 414px --> the biggest iphones */
 @media screen and (max-width: 414px) {
     .cocktailName {
+        margin-top: 12%;
         margin-bottom: 2%;
         font-size: 9.5vw;
     }
@@ -91,19 +92,19 @@ li {
   }
 
   .picture {
-    width: 70%;
+    width: 75%;
     border-radius: 8px;
-    margin-top: 3%;
+    margin-top: 8%;
     margin-bottom: 5%;
   }
 
   .ingredientsList {
-    width: 70%;
+    width: 75%;
     margin-bottom: 5%;
   }
 
   .recipeList {
-    width: 70%;
+    width: 75%;
     margin-bottom: 5%;
     margin-top: 0%;
   }
@@ -119,10 +120,10 @@ h2{
 }
 
 /* for phones max-width 1024px --> for ipads*/
-@media screen and (min-device-width: 415px) and (max-width: 1024px) {
+@media screen and (min-device-width: 415px) and (max-width: 1023px) {
     .cocktailName {
         padding-top: 10%;
-        font-size: 60px;
+        font-size: 40px;
       }
 
     .PicAndListWrapper {
@@ -158,23 +159,25 @@ h2{
 
 /* ipad pro*/
 @media screen and (min-device-width: 769px) and (max-width: 1024px) {
+    
     .cocktailName {
-        font-size: 50px;
+        font-size: 40px;
     }
 
     .ingredientsList ul {
-        font-size: 23px;
+        font-size: 18px;
     }
 
     .withMainIngredient {
-        font-size: 25px;
+        font-size: 18px;
     }
 
     h2{
-        font-size: 25px;
+        font-size: 20px;
     }
 }
 
 /*random size of screen between mobile size and ipad size*/
 @media screen and (min-device-width: 415px) and (max-width: 680px) {
+
 }
