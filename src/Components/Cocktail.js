@@ -3,6 +3,7 @@ import margarita from "./margarita.json";
 import "./Cocktail.css";
 import { Link } from "react-router-dom";
 
+
 export default class Cocktail extends Component {
   constructor(props) {
     super(props);
@@ -108,7 +109,7 @@ export default class Cocktail extends Component {
           <div>
             <div className="drinkPresentation">
               <div className="back">
-                <Link to="/">back</Link>
+                <Link to="/"><i className="fas fa-angle-left fa-3x"></i></Link>
               </div>
               <h1 className="cocktailName">{this.state.recipe.name}</h1>
               <p className="withMainIngredient">

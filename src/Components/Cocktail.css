@@ -33,6 +33,23 @@
   height: 95%;
 }
 
+.back{
+  position: relative;
+  left: 3vw;
+  text-align: left;
+  top: 4vh;
+}
+
+.fa-angle-left:before {
+  -webkit-text-stroke: 3px  rgb(215, 223, 222);
+  color: rgb(65, 64, 64);
+}
+
+.back i:hover{
+  color:rgb(138, 138, 139);
+}
+
+
 
 .ingredientsList ul {
   display: flex;
