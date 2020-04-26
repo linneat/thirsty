@@ -76,7 +76,7 @@ export default class Cocktail extends Component {
                 </Link>
               </div>
               <h1 className="cocktailName">{this.state.recipe.name}</h1>
-              <div >
+              <div className="nexRandomWrap">
                 <Link to={"/random/" + this.state.mainSpirit}>
                   <button className="nextRandom">New {this.state.mainSpirit.toLowerCase()} cocktail</button>
                 </Link>
