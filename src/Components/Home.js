@@ -13,7 +13,7 @@ export default class Home extends Component {
           <Switch>
             <Route path={"/"} exact component={Spirits} />
             <Route
-              path={"/random"}
+              path={"/random/:mainSpirit"}
               render={(props) => <Random {...props} />}
             ></Route>
             <Route

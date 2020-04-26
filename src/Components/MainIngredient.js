@@ -5,14 +5,7 @@ export default class Cocktail extends Component {
   render() {
     return (
       <button className="ingredientName">
-        <Link
-          to={{
-            pathname: "/random",
-            mainIngredient: this.props.name,
-          }}
-        >
-          {this.props.name}
-        </Link>
+        <Link to={"/random/" + this.props.name}>{this.props.name}</Link>
       </button>
     );
   }

@@ -8,18 +8,19 @@ export default class Random extends Component {
     this.state = {
       error: undefined,
       cocktailId: undefined,
+      mainSpirit: props.match.params.mainSpirit,
     };
   }
 
   componentDidMount() {
-    if (this.props.location.mainIngredient === undefined) {
+    if (this.state.mainSpirit === undefined) {
       this.setState({
         error: "undefined main ingredient",
       });
     } else {
       var url =
         "https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=" +
-        this.props.location.mainIngredient;
+        this.state.mainSpirit;
       fetch(url)
         .then((response) => response.json())
         .then(
@@ -28,7 +29,7 @@ export default class Random extends Component {
               this.setState({
                 error:
                   "no cocktails for this main ingredient: " +
-                  this.props.location.mainIngredient,
+                  this.state.mainSpirit,
               });
             } else {
               var randomDrink =
@@ -49,7 +50,7 @@ export default class Random extends Component {
 
   render() {
     if (this.state.cocktailId) {
-      return <Redirect to={"/cocktail/"+ this.props.location.mainIngredient+ "/" + this.state.cocktailId} />;
+      return <Redirect to={"/cocktail/"+ this.state.mainSpirit+ "/" + this.state.cocktailId} />;
     } else if (this.state.error) {
       return <div>an error occured: {this.state.error}</div>;
     } else {

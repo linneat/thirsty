@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default class Cocktail extends Component {
   constructor(props) {
     super(props);
-    debugger;
+
     this.state = {
       recipe: undefined,
       cocktailId: props.match.params.id,
@@ -77,10 +77,7 @@ export default class Cocktail extends Component {
               <h1 className="cocktailName">{this.state.recipe.name}</h1>
               <div className="nextRandom">
                 <Link
-                  to={{
-                    pathname: "/random",
-                    mainIngredient: this.state.mainSpirit,
-                  }}
+                  to={"/random/" + this.state.mainSpirit}
                 >
                   <button>New random {this.state.mainSpirit} cocktail</button>
                 </Link>
