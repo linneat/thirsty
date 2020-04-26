@@ -5,14 +5,7 @@ export default class Random extends Component {
   constructor(props) {
     super(props);
 
-    var mainIngredient = this.props.location.mainIngredient;
-    if (mainIngredient === undefined) {
-      let ingredients = ["Vodka", "column", "Gin", "Whiskey", "column", "Rum", "Cognac", "Brandy"];
-      mainIngredient = ingredients[Math.floor(Math.random() * ingredients.length)];
-    }
-
     this.state = {
-      mainIngredient: mainIngredient,
       error: undefined,
       cocktailId: undefined,
     };
@@ -39,19 +32,18 @@ export default class Random extends Component {
   }
 
   componentDidMount() {
-    this.randomCocktail(this.state.mainIngredient);
+    if (this.props.location.mainIngredient === undefined) {
+      this.setState({
+        error: "undefined main ingredient",
+      });
+    } else {
+      this.randomCocktail(this.props.location.mainIngredient);
+    }
   }
 
   render() {
     if (this.state.cocktailId) {
-      return (
-        <Redirect
-          to={{
-            pathname: "/cocktail/" + this.state.cocktailId,
-            mainIngredient: this.state.mainIngredient,
-          }}
-        />
-      );
+      return <Redirect to={"/cocktail/" + this.state.cocktailId} />;
     } else if (this.state.error) {
       return <div>an error occured: {this.state.error}</div>;
     } else {
