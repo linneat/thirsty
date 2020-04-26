@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Redirect } from "react-router";
-import Loading from "./Loading";
 
 export default class Random extends Component {
   constructor(props) {
@@ -8,9 +7,8 @@ export default class Random extends Component {
 
     var mainIngredient = this.props.location.mainIngredient;
     if (mainIngredient === undefined) {
-      let ingredients = ["Vodka", "Gin", "Whiskey", "Rum", "Cognac", "Brandy"];
-      mainIngredient =
-        ingredients[Math.floor(Math.random() * ingredients.length)];
+      let ingredients = ["Vodka", "column", "Gin", "Whiskey", "column", "Rum", "Cognac", "Brandy"];
+      mainIngredient = ingredients[Math.floor(Math.random() * ingredients.length)];
     }
 
     this.state = {
@@ -57,7 +55,7 @@ export default class Random extends Component {
     } else if (this.state.error) {
       return <div>an error occured: {this.state.error}</div>;
     } else {
-      return <Loading />;
+      return <div>loading the cocktail...</div>;
     }
   }
 }

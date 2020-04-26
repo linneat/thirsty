@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "./Cocktail.css";
 import { Link } from "react-router-dom";
-import Loading from "./Loading";
 
 export default class Cocktail extends Component {
   constructor(props) {
@@ -54,7 +53,7 @@ export default class Cocktail extends Component {
 
   render() {
     if (this.state.recipe === undefined) {
-      return <Loading />;
+      return <div>loading the cocktail...</div>;
     } else {
       return (
         <div>

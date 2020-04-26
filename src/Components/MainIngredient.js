@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
-export default class MainIngredient extends Component {
+export default class Cocktail extends Component {
   render() {
     return (
       <button className="ingredientName">
