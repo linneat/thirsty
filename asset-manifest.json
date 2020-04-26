@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/thirsty/static/css/main.24d494a7.chunk.css",
+    "main.js": "/thirsty/static/js/main.8e37e8e3.chunk.js",
+    "main.js.map": "/thirsty/static/js/main.8e37e8e3.chunk.js.map",
+    "runtime-main.js": "/thirsty/static/js/runtime-main.6f377d81.js",
+    "runtime-main.js.map": "/thirsty/static/js/runtime-main.6f377d81.js.map",
+    "static/js/2.7521f491.chunk.js": "/thirsty/static/js/2.7521f491.chunk.js",
+    "static/js/2.7521f491.chunk.js.map": "/thirsty/static/js/2.7521f491.chunk.js.map",
+    "index.html": "/thirsty/index.html",
+    "precache-manifest.bc62ed6d9ac0032233c5b7c104d9fbd5.js": "/thirsty/precache-manifest.bc62ed6d9ac0032233c5b7c104d9fbd5.js",
+    "service-worker.js": "/thirsty/service-worker.js",
+    "static/css/main.24d494a7.chunk.css.map": "/thirsty/static/css/main.24d494a7.chunk.css.map",
+    "static/js/2.7521f491.chunk.js.LICENSE.txt": "/thirsty/static/js/2.7521f491.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6f377d81.js",
+    "static/js/2.7521f491.chunk.js",
+    "static/css/main.24d494a7.chunk.css",
+    "static/js/main.8e37e8e3.chunk.js"
+  ]
+}
