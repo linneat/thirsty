@@ -36,32 +36,23 @@ export default class Cocktail extends Component {
     };
   }
 
-  componentDidMount() {
+  async componentDidMount() {
     var url =
       "https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=" +
       this.state.cocktailId;
 
-    fetch(url)
-      .then((response) => response.json())
-      .then(
-        (data) => {
-          var recipe = this.convertDataToRecipe(data);
-          this.setState({
-            recipe: recipe,
-          });
-        },
-        (error) => {
-          this.setState({
-            error: error,
-          });
-        }
-      );
+    let response = await fetch(url);
+    let data = await response.json();
+    
+    var recipe = this.convertDataToRecipe(data);
+    
+    this.setState({
+      recipe: recipe,
+    });
   }
 
   render() {
-    if (this.state.error) {
-      return <div>an error occured: {this.state.error}</div>;
-    } else if (this.state.recipe === undefined) {
+    if (this.state.recipe === undefined) {
       return <div>loading the cocktail...</div>;
     } else {
       return (
