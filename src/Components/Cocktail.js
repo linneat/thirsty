@@ -43,9 +43,9 @@ export default class Cocktail extends Component {
 
     let response = await fetch(url);
     let data = await response.json();
-    
+
     var recipe = this.convertDataToRecipe(data);
-    
+
     this.setState({
       recipe: recipe,
     });
@@ -65,6 +65,17 @@ export default class Cocktail extends Component {
                 </Link>
               </div>
               <h1 className="cocktailName">{this.state.recipe.name}</h1>
+            </div>
+            <div className="random">
+              <Link
+                to={{
+                  pathname: "/random",
+                  mainIngredient: this.props.location.mainIngredient,
+                }}
+              >
+                Get another {this.props.location.mainIngredient || "random"}{" "}
+                cocktail!
+              </Link>
             </div>
             <div className="PicAndListWrapper">
               <div className="columnPicAndListsWrapper">
