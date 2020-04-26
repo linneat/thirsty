@@ -8,8 +8,8 @@ export default class Spirits extends Component {
     return (
       <div>
         <div className="iconAndTitleWrapper">
-        <img src={Icon} alt="cocktail icon"  className="iconTitle"/>
-        <h1 className="title">Thirsty ?</h1>
+          <img src={Icon} alt="cocktail icon" className="iconTitle" />
+          <h1 className="title">Thirsty ?</h1>
         </div>
         <p className="slogan">Get a random cocktail recipe</p>
 

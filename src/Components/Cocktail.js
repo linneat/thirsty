@@ -7,6 +7,7 @@ export default class Cocktail extends Component {
     super(props);
 
     this.state = {
+      recipe: undefined,
       cocktailId: props.match.params.id,
     };
   }
