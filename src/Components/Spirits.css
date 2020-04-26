@@ -68,7 +68,7 @@
     margin-top: 2vh;
 }
 
-.ingedientName{
+.ingredientName{
     padding-top: 2.5vh;
     padding-bottom: 5vh;
     font-size: 3.5vh;
@@ -95,7 +95,7 @@
     flex: 1;
   }
 
-  .ingedientName{
+  .ingredientName{
       padding-bottom: 3vh;
   }
 
@@ -128,7 +128,7 @@
         font-size: 3.4vh;
     }
 
-    .ingedientName{
+    .ingredientName{
         font-size: 3vh;
     }
 
@@ -159,7 +159,7 @@
         font-size: 2.5vh;
     }
 
-    .ingedientName{
+    .ingredientName{
         font-size: 3vh;
     }
 }

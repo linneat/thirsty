@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 export default class Cocktail extends Component {
   render() {
     return (
-      <button className="ingedientName">
+      <button className="ingredientName">
         <Link
           to={{
-            pathname: "/cocktail",
+            pathname: "/random",
             mainIngredient: this.props.name,
           }}
         >
