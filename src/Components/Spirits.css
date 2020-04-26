@@ -104,9 +104,16 @@
 /* for phones max-width 414px --> the biggest iphones */
 @media screen and (max-width: 414px) {
     .title{
-        margin-top: 8vh;
-        font-size: 35px;
-        margin-bottom: 1%;
+        margin-top: 5vh;
+        font-size: pvw;
+    }
+    
+    .slogan{
+        font-size: 4vw;
+    }
+
+    .iconAndTitleWrapper {
+        margin-top: 3vh;
     }
 
     .iconTitle {
@@ -145,10 +152,15 @@
 
     h2 {
         margin-bottom: 2%;
+        font-size: 2.5vh;
     }
 
     .slogan {
-        font-size: 25px;
+        font-size: 2.5vh;
+    }
+
+    .ingedientName{
+        font-size: 3vh;
     }
 }
 
@@ -156,16 +168,22 @@
 /* ipad pro*/
 @media screen and (min-device-width: 769px) and (max-width: 1024px) {
     .title {
-        font-size: 40px;
+        font-size: 5vh;
+    }
+
+    .iconTitle {
+        height: 5vh;
     }
 
     .slogan {
-        font-size: 20px;
+        font-size: 2.6;
     }
 
     h2{
-        font-size: 23px;
+        font-size: 2.5vh;
     }
+
+   
 }
 
 /*random size of screen between mobile size and ipad size*/

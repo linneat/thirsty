@@ -97,9 +97,9 @@ li {
 /* for phones max-width 414px --> the biggest iphones */
 @media screen and (max-width: 414px) {
     .cocktailName {
-        margin-top: 12%;
+        margin-top: 3%;
         margin-bottom: 2%;
-        font-size: 9.5vw;
+        font-size: 9vw;
     }
 
   .PicAndListWrapper {
