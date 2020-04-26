@@ -6,7 +6,20 @@
     font-size: 40px;
     font-family: Montserrat;
     color: rgb(15, 15, 15);
-    margin-top: 13vh;
+    margin: auto;
+    margin-left: 0%;
+}
+
+.iconAndTitleWrapper{
+    display: flex;
+    margin-top: 10vh;
+}
+
+.iconTitle{
+    align-items: center;
+    margin: auto;
+    margin-right: 0%;
+    height: 40px;
 }
 
 .slogan{
@@ -93,6 +106,11 @@
     .title{
         margin-top: 8vh;
         font-size: 35px;
+        margin-bottom: 1%;
+    }
+
+    .iconTitle {
+        margin-bottom: 3px;
     }
 
     .row{

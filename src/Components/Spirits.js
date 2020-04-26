@@ -1,12 +1,16 @@
 import React, { Component } from "react";
 import MainIngredient from "./MainIngredient";
 import "./Spirits.css";
+import Icon from "./icon.png";
 
 export default class Spirits extends Component {
   render() {
     return (
       <div>
+        <div className="iconAndTitleWrapper">
+        <img src={Icon} alt="cocktail icon"  className="iconTitle"/>
         <h1 className="title">Thirsty ?</h1>
+        </div>
         <p className="slogan">Get a random cocktail recipe</p>
 
         <div className="ingredientListWrapper">
