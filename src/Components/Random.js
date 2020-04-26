@@ -11,33 +11,39 @@ export default class Random extends Component {
     };
   }
 
-  async randomCocktail(mainIngredient) {
-    var url =
-      "https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=" +
-      mainIngredient;
-    let response = await fetch(url);
-    let data = await response.json();
-
-    if (data.drinks.length === 0) {
-      this.setState({
-        error: "no cocktails for this main ingredient: " + mainIngredient,
-      });
-    } else {
-      var randomDrink =
-        data.drinks[Math.floor(Math.random() * data.drinks.length)];
-      this.setState({
-        cocktailId: randomDrink.idDrink,
-      });
-    }
-  }
-
   componentDidMount() {
     if (this.props.location.mainIngredient === undefined) {
       this.setState({
         error: "undefined main ingredient",
       });
     } else {
-      this.randomCocktail(this.props.location.mainIngredient);
+      var url =
+        "https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=" +
+        this.props.location.mainIngredient;
+      fetch(url)
+        .then((response) => response.json())
+        .then(
+          (data) => {
+            if (data.drinks.length === 0) {
+              this.setState({
+                error:
+                  "no cocktails for this main ingredient: " +
+                  this.props.location.mainIngredient,
+              });
+            } else {
+              var randomDrink =
+                data.drinks[Math.floor(Math.random() * data.drinks.length)];
+              this.setState({
+                cocktailId: randomDrink.idDrink,
+              });
+            }
+          },
+          (error) => {
+            this.setState({
+              error: error,
+            });
+          }
+        );
     }
   }
 
