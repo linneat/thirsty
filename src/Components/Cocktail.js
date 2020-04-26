@@ -7,6 +7,7 @@ export default class Cocktail extends Component {
     super(props);
 
     this.state = {
+      error : undefined,
       recipe: undefined,
       cocktailId: props.match.params.id,
       mainSpirit: props.match.params.mainSpirit,
@@ -75,9 +76,9 @@ export default class Cocktail extends Component {
                 </Link>
               </div>
               <h1 className="cocktailName">{this.state.recipe.name}</h1>
-              <div className="nextRandom">
+              <div >
                 <Link to={"/random/" + this.state.mainSpirit}>
-                  <button>New random {this.state.mainSpirit} cocktail</button>
+                  <button className="nextRandom">New {this.state.mainSpirit.toLowerCase()} cocktail</button>
                 </Link>
               </div>
             </div>
