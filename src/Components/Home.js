@@ -17,7 +17,7 @@ export default class Home extends Component {
               render={(props) => <Random {...props} />}
             ></Route>
             <Route
-              path={"/cocktail/:id"}
+              path={"/cocktail/:mainSpirit/:id"}
               render={(props) => <Cocktail {...props} />}
             ></Route>
           </Switch>

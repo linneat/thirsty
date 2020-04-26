@@ -49,7 +49,7 @@ export default class Random extends Component {
 
   render() {
     if (this.state.cocktailId) {
-      return <Redirect to={"/cocktail/" + this.state.cocktailId} />;
+      return <Redirect to={"/cocktail/"+ this.props.location.mainIngredient+ "/" + this.state.cocktailId} />;
     } else if (this.state.error) {
       return <div>an error occured: {this.state.error}</div>;
     } else {
