@@ -34,7 +34,7 @@
   margin: auto;
   flex-direction: row;
   margin-bottom: 4%;
-  margin-top: 7%;
+  margin-top: 3%;
 }
 
 .columnPicAndListsWrapper {
@@ -67,7 +67,6 @@
 .back a:hover{
   color:rgb(138, 138, 139);
 }
-
 
 
 .ingredientsList ul {
