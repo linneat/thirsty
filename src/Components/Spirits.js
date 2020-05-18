@@ -45,7 +45,8 @@ export default class Spirits extends Component {
             </div>
           </div>
         </div>
-        <Link to={"/quiz"}>jghfjgfjghj</Link>
+        <p>Are you sure another drink is a good idea? Try the <Link to={"/quiz"}>tipsy test</Link> </p>
+        
       </div>
     );
   }
