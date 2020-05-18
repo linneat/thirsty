@@ -4,6 +4,7 @@ import Cocktail from "./Cocktail";
 import Spirits from "./Spirits";
 import Random from "./Random";
 import "./Home.css";
+import Quiz from "./Quiz";
 
 export default class Home extends Component {
   render() {
@@ -12,6 +13,7 @@ export default class Home extends Component {
         <Router>
           <Switch>
             <Route path={"/"} exact component={Spirits} />
+            <Route path={"/quiz"} exact component={Quiz}/>
             <Route
               path={"/random/:mainSpirit"}
               render={(props) => <Random {...props} />}

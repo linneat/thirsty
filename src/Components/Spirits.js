@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import MainIngredient from "./MainIngredient";
 import "./Spirits.css";
 import Icon from "./icon.png";
+import Quiz from "./Quiz";
+import { Link } from "react-router-dom";
 
 export default class Spirits extends Component {
   render() {
@@ -43,6 +45,7 @@ export default class Spirits extends Component {
             </div>
           </div>
         </div>
+        <Link to={"/quiz"}>jghfjgfjghj</Link>
       </div>
     );
   }
