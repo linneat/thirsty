@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Redirect } from "react-router";
+import * as ReactBootStrap from 'react-bootstrap';
 
 export default class Random extends Component {
   constructor(props) {
@@ -54,7 +55,8 @@ export default class Random extends Component {
     } else if (this.state.error) {
       return <div>an error occured: {this.state.error}</div>;
     } else {
-      return <div>loading the cocktail...</div>;
+      return <div><div><ReactBootStrap.Spinner animation="border"/></div>
+      <div>The best things in life are worth waiting for.</div></div>;;
     }
   }
 }

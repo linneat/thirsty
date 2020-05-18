@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./Cocktail.css";
 import { Link } from "react-router-dom";
+import * as ReactBootStrap from 'react-bootstrap';
 
 export default class Cocktail extends Component {
   constructor(props) {
@@ -64,7 +65,8 @@ export default class Cocktail extends Component {
     if (this.state.error) {
       return <div>an error occured: {this.state.error}</div>;
     } else if (this.state.recipe === undefined) {
-      return <div>loading the cocktail...</div>;
+      return <div><div><ReactBootStrap.Spinner animation="border" /></div>
+      <div>The best things in life are worth waiting for.</div></div>;
     } else {
       return (
         <div>
