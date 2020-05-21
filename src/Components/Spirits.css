@@ -98,6 +98,21 @@
       padding-bottom: 3vh;
   }
 
+  .textToQuizLink{
+      margin-top: 1%;
+      font-family: Roboto Condensed;
+  }
+
+  .textToQuizLink a{
+      color: rgb(197, 145, 78);
+      font-weight: bold;
+     
+  }
+
+  .textToQuizLink a:hover{
+      color: rgb(117, 117, 117);
+  }
+
 
 /* responsive*/
 /* for phones max-width 414px --> the biggest iphones */

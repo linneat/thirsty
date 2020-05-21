@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./Cocktail.css";
 import "./Quiz.css";
+import { Link } from "react-router-dom";
 
 export default class Quiz extends Component {
   constructor(props) {
@@ -68,6 +69,11 @@ export default class Quiz extends Component {
   render() {
     return (
       <div>
+        <div className="back">
+          <Link to="/">
+            <i className="fas fa-angle-left fa-3x"></i>
+          </Link>
+        </div>
         <h1 className="cocktailName">Tipsy test</h1>
         <div className="q">
           <h2 className="questions">Can you walk in a straight line?</h2>
@@ -178,7 +184,9 @@ export default class Quiz extends Component {
             </div>
           </div>
         </div>
-        <button className="resultButton" onClick={this.handleClick}>tipsy test result</button>
+        <button className="resultButton" onClick={this.handleClick}>
+          tipsy test result
+        </button>
         <div className="testResult">{this.state.message}</div>
       </div>
     );

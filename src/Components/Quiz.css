@@ -7,7 +7,7 @@
     margin: auto;
     margin-top: 2%;
     margin-bottom: 2%;
-    width: 60%;
+    width: 55%;
     border-radius: 5px;
   
 }
@@ -28,13 +28,16 @@
 .questions{
     font-size: 19px;
     font-weight: bold;
-    display: flex;
     margin-top: 2%;
-    margin-left: 16%;
+    align-self: center;
 }
 
 .cocktailName {
     margin-bottom: 6%;
+    padding-top: 0%;
+}
+.answer{
+    font-family: Roboto Condensed;
 }
 
 input{
@@ -44,11 +47,16 @@ input{
 .testResult{
     margin-bottom: 2%;
     font-weight: bold;
+    font-family: Roboto Condensed;
 }
 
 .resultButton{
     margin-bottom: 1%;
     border-radius: 5px;
     border-width: thin;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
