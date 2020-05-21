@@ -31,7 +31,7 @@ export default class Quiz extends Component {
       this.state.question2 !== undefined &&
       this.state.question3 !== undefined
     ) {
-        let sum = 0;
+      let sum = 0;
       if (this.state.question1 === "tipsy") {
         sum = sum + 1;
       } else if (this.state.question1 === "sober") {
@@ -53,7 +53,7 @@ export default class Quiz extends Component {
       } else if (sum < 0) {
         message = "You are completely sober";
       } else {
-          message = "You are only a little tipsy - one more drink wouldn't hurt";
+        message = "You are only a little tipsy - one more drink wouldn't hurt";
       }
       this.setState({
         message: message,
@@ -66,13 +66,13 @@ export default class Quiz extends Component {
   };
 
   render() {
-      return (
-        <div>
-          <h1 className="cocktailName">Tipsy test</h1>
-          <div className="q1">
-            <h2>Can you walk in a straight line?</h2>
-            <div className="radio-buttons">
-              It's very difficult
+    return (
+      <div>
+        <h1 className="cocktailName">Tipsy test</h1>
+        <div className="q">
+          <h2 className="questions">Can you walk in a straight line?</h2>
+          <div className="radio-buttons">
+            <div className="answer">
               <input
                 id="tipsy"
                 value="tipsy"
@@ -80,7 +80,9 @@ export default class Quiz extends Component {
                 type="radio"
                 onChange={this.handleChange}
               />
-              Yes, but its not easy
+              it's very difficult
+            </div>
+            <div className="answer">
               <input
                 id="littleTipsy"
                 value="littleTipsy"
@@ -88,7 +90,9 @@ export default class Quiz extends Component {
                 type="radio"
                 onChange={this.handleChange}
               />
-              Yes that is no problem
+              yes, but its not easy
+            </div>
+            <div className="answer">
               <input
                 id="sober"
                 value="sober"
@@ -96,70 +100,87 @@ export default class Quiz extends Component {
                 type="radio"
                 onChange={this.handleChange}
               />
+              yes that is no problem
             </div>
-            <div className="q2">
-              <h2>Did you just now decide to quit your job tomorrow?</h2>
-              <div className="radio-buttons">
-                yes, I just realized how misarable my job actually is
-                <input
-                  id="tipsy"
-                  value="tipsy"
-                  name="question2"
-                  type="radio"
-                  onChange={this.handleChange}
-                />
-                Yes, but I know I will feel differently about it when I wake up
-                tomorrow
-                <input
-                  id="littleTipsy"
-                  value="littleTipsy"
-                  name="question2"
-                  type="radio"
-                  onChange={this.handleChange}
-                />
-                No, I would never make such a rushed decision
-                <input
-                  id="sober"
-                  value="sober"
-                  name="question2"
-                  type="radio"
-                  onChange={this.handleChange}
-                />
-              </div>
-            </div>
-            <div className="q2">
-              <h2>It is 2am, do you think its a good idea to call your ex?</h2>
-              <div className="radio-buttons">
-                YES best idea ever
-                <input
-                  id="tipsy"
-                  value="tipsy"
-                  name="question3"
-                  type="radio"
-                  onChange={this.handleChange}
-                />
-                No but I guess a text message is okay
-                <input
-                  id="littleTipsy"
-                  value="littleTipsy"
-                  name="question3"
-                  type="radio"
-                  onChange={this.handleChange}
-                />
-                No definitly not
-                <input
-                  id="sober"
-                  value="sober"
-                  name="question3"
-                  type="radio"
-                  onChange={this.handleChange}
-                />
-              </div>
-            </div>
-            <button onClick={this.handleClick}>tipsy test result</button>
-            <div>{this.state.message}</div>
           </div>
         </div>
-      );
-    }
+        <div className="q">
+          <h2 className="questions">
+            Did you just now decide to quit your job tomorrow?
+          </h2>
+          <div className="radio-buttons">
+            <div className="answer">
+              <input
+                id="tipsy"
+                value="tipsy"
+                name="question2"
+                type="radio"
+                onChange={this.handleChange}
+              />
+              yes, I just realized how misarable my job actually is
+            </div>
+            <div className="answer">
+              <input
+                id="littleTipsy"
+                value="littleTipsy"
+                name="question2"
+                type="radio"
+                onChange={this.handleChange}
+              />
+              yes, but I will probably feel differently about it tomorrow
+            </div>
+            <div className="answer">
+              <input
+                id="sober"
+                value="sober"
+                name="question2"
+                type="radio"
+                onChange={this.handleChange}
+              />
+              no, I would never make such a rushed decision
+            </div>
+          </div>
+        </div>
+        <div className="q">
+          <h2 className="questions">
+            It is 2am, do you think its a good idea to call your ex?
+          </h2>
+          <div className="radio-buttons">
+            <div className="answer">
+              <input
+                id="tipsy"
+                value="tipsy"
+                name="question3"
+                type="radio"
+                onChange={this.handleChange}
+              />
+              YES best idea ever
+            </div>
+            <div className="answer">
+              <input
+                id="littleTipsy"
+                value="littleTipsy"
+                name="question3"
+                type="radio"
+                onChange={this.handleChange}
+              />
+              no but I guess a text message is okay
+            </div>
+            <div className="answer">
+              <input
+                id="sober"
+                value="sober"
+                name="question3"
+                type="radio"
+                onChange={this.handleChange}
+              />
+              no definitly not
+            </div>
+          </div>
+        </div>
+        <button className="resultButton" onClick={this.handleClick}>tipsy test result</button>
+        <div className="testResult">{this.state.message}</div>
+      </div>
+    );
+  }
 }

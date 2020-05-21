@@ -1,5 +1,54 @@
 
 
-.q1{
-    color: white;
+.q{
+    background-color: white;
+    display:flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 60%;
+    border-radius: 5px;
+  
 }
+
+
+
+.radio-buttons{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 15%;
+    margin-right: 10%;
+    margin-bottom: 3%;
+    margin-top: 1%;
+    
+}
+
+.questions{
+    font-size: 19px;
+    font-weight: bold;
+    display: flex;
+    margin-top: 2%;
+    margin-left: 16%;
+}
+
+.cocktailName {
+    margin-bottom: 6%;
+}
+
+input{
+    margin: 2%;
+}
+
+.testResult{
+    margin-bottom: 2%;
+    font-weight: bold;
+}
+
+.resultButton{
+    margin-bottom: 1%;
+    border-radius: 5px;
+    border-width: thin;
+}
+
