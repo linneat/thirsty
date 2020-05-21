@@ -32,9 +32,10 @@
     align-self: center;
 }
 
-.cocktailName {
+.QuizName {
     margin-bottom: 6%;
     padding-top: 0%;
+    font-family: Montserrat;
 }
 .answer{
     font-family: Roboto Condensed;

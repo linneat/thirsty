@@ -74,7 +74,7 @@ export default class Quiz extends Component {
             <i className="fas fa-angle-left fa-3x"></i>
           </Link>
         </div>
-        <h1 className="cocktailName">Tipsy test</h1>
+        <h1 className="QuizName">Tipsy test</h1>
         <div className="q">
           <h2 className="questions">Can you walk in a straight line?</h2>
           <div className="radio-buttons">

@@ -1,5 +1,9 @@
+h2{
+  margin-top: 2%;
+}
 .cocktailName {
   padding-top: 2%;
+  margin-bottom: 2%;
   font-family: Montserrat;
   margin-block-start: 1%;
 }
