@@ -11,7 +11,7 @@ export default class Quiz extends Component {
       question1: undefined,
       question2: undefined,
       question3: undefined,
-      message:  "Answer all the questions to see result here",
+      message: "Answer all the questions to see result here",
     };
   }
 
@@ -32,22 +32,10 @@ export default class Quiz extends Component {
       this.state.question2 !== undefined &&
       this.state.question3 !== undefined
     ) {
-      let sum = 0;
-      if (this.state.question1 === "tipsy") {
-        sum = sum + 1;
-      } else if (this.state.question1 === "sober") {
-        sum = sum - 1;
-      }
-      if (this.state.question2 === "tipsy") {
-        sum = sum + 1;
-      } else if (this.state.question2 === "sober") {
-        sum = sum - 1;
-      }
-      if (this.state.question3 === "tipsy") {
-        sum = sum + 1;
-      } else if (this.state.question3 === "sober") {
-        sum = sum - 1;
-      }
+      let sum =
+        parseInt(this.state.question1) +
+        parseInt(this.state.question2) +
+        parseInt(this.state.question3);
       let message = "";
       if (sum > 0) {
         message = "You are tipsy - GO TO BED";
@@ -80,8 +68,8 @@ export default class Quiz extends Component {
           <div className="radio-buttons">
             <div className="answer">
               <input
-                id="tipsy"
-                value="tipsy"
+                id="tipsyq1"
+                value="1"
                 name="question1"
                 type="radio"
                 onChange={this.handleChange}
@@ -90,8 +78,8 @@ export default class Quiz extends Component {
             </div>
             <div className="answer">
               <input
-                id="littleTipsy"
-                value="littleTipsy"
+                id="littleTipsyq1"
+                value="0"
                 name="question1"
                 type="radio"
                 onChange={this.handleChange}
@@ -100,8 +88,8 @@ export default class Quiz extends Component {
             </div>
             <div className="answer">
               <input
-                id="sober"
-                value="sober"
+                id="soberq1"
+                value="-1"
                 name="question1"
                 type="radio"
                 onChange={this.handleChange}
@@ -117,8 +105,8 @@ export default class Quiz extends Component {
           <div className="radio-buttons">
             <div className="answer">
               <input
-                id="tipsy"
-                value="tipsy"
+                id="tipsyq2"
+                value="1"
                 name="question2"
                 type="radio"
                 onChange={this.handleChange}
@@ -127,8 +115,8 @@ export default class Quiz extends Component {
             </div>
             <div className="answer">
               <input
-                id="littleTipsy"
-                value="littleTipsy"
+                id="littleTipsyq2"
+                value="0"
                 name="question2"
                 type="radio"
                 onChange={this.handleChange}
@@ -137,8 +125,8 @@ export default class Quiz extends Component {
             </div>
             <div className="answer">
               <input
-                id="sober"
-                value="sober"
+                id="soberq2"
+                value="-1"
                 name="question2"
                 type="radio"
                 onChange={this.handleChange}
@@ -154,8 +142,8 @@ export default class Quiz extends Component {
           <div className="radio-buttons">
             <div className="answer">
               <input
-                id="tipsy"
-                value="tipsy"
+                id="tipsyq3"
+                value="1"
                 name="question3"
                 type="radio"
                 onChange={this.handleChange}
@@ -164,8 +152,8 @@ export default class Quiz extends Component {
             </div>
             <div className="answer">
               <input
-                id="littleTipsy"
-                value="littleTipsy"
+                id="littleTipsyq3"
+                value="0"
                 name="question3"
                 type="radio"
                 onChange={this.handleChange}
@@ -174,8 +162,8 @@ export default class Quiz extends Component {
             </div>
             <div className="answer">
               <input
-                id="sober"
-                value="sober"
+                id="soberq3"
+                value="-1"
                 name="question3"
                 type="radio"
                 onChange={this.handleChange}
