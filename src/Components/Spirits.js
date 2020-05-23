@@ -13,7 +13,6 @@ export default class Spirits extends Component {
           <h1 className="title">Thirsty ?</h1>
         </div>
         <p className="slogan">Get a random cocktail recipe</p>
-
         <div className="ingredientListWrapper">
           <div className="ingredientListHeader">
             <h2>Choose your main ingredient:</h2>
@@ -22,30 +21,56 @@ export default class Spirits extends Component {
           <div className="ingredientList">
             <div className="row">
               <div className="column">
-                <MainIngredient name="Vodka" />
+                <button className="ingredientName">
+                  <Link to="/random/Vodka">
+                    Vodka
+                  </Link>
+                </button>
               </div>
               <div className="column">
-                <MainIngredient name="Gin" />
+              <button className="ingredientName">
+                  <Link to="/random/Gin">
+                    Gin
+                  </Link>
+                </button>
               </div>
               <div className="column">
-                <MainIngredient name="Whiskey" />
+              <button className="ingredientName">
+                  <Link to="/random/Whiskey">
+                    Whiskey
+                  </Link>
+                </button>
               </div>
             </div>
             <div className="row">
               <div className="column">
-                <MainIngredient name="Rum" />
+              <button className="ingredientName">
+                  <Link to="/random/Rum">
+                    Rum
+                  </Link>
+                </button>
               </div>
               <div className="column">
-                <MainIngredient name="Cognac" />
+              <button className="ingredientName">
+                  <Link to="/random/Cognac">
+                    Cognac
+                  </Link>
+                </button>
               </div>
               <div className="column">
-                <MainIngredient name="Brandy" />
+              <button className="ingredientName">
+                  <Link to="/random/Brandy">
+                    Brandy
+                  </Link>
+                </button>
               </div>
             </div>
           </div>
         </div>
-        <p className="textToQuizLink">Are you sure another drink is a good idea? Try the <Link to={"/quiz"}>tipsy test</Link> </p>
-        
+        <p className="textToQuizLink">
+          Are you sure another drink is a good idea? Try the{" "}
+          <Link to={"/quiz"}>tipsy test</Link>{" "}
+        </p>
       </div>
     );
   }
