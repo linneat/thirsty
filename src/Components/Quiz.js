@@ -11,7 +11,7 @@ export default class Quiz extends Component {
       question1: undefined,
       question2: undefined,
       question3: undefined,
-      message: "",
+      message:  "Answer all the questions to see result here",
     };
   }
 
@@ -96,7 +96,7 @@ export default class Quiz extends Component {
                 type="radio"
                 onChange={this.handleChange}
               />
-              yes, but its not easy
+              yes, but it's not easy
             </div>
             <div className="answer">
               <input
@@ -123,7 +123,7 @@ export default class Quiz extends Component {
                 type="radio"
                 onChange={this.handleChange}
               />
-              yes, I just realized how misarable my job actually is
+              yes, I just realized how miserable my job actually is
             </div>
             <div className="answer">
               <input
@@ -149,7 +149,7 @@ export default class Quiz extends Component {
         </div>
         <div className="q">
           <h2 className="questions">
-            It is 2am, do you think its a good idea to call your ex?
+            It is 2am, do you think it's a good idea to call your ex?
           </h2>
           <div className="radio-buttons">
             <div className="answer">
@@ -180,7 +180,7 @@ export default class Quiz extends Component {
                 type="radio"
                 onChange={this.handleChange}
               />
-              no definitly not
+              no definitely not
             </div>
           </div>
         </div>
