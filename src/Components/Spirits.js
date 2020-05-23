@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import MainIngredient from "./MainIngredient";
 import "./Spirits.css";
 import Icon from "./icon.png";
 import { Link } from "react-router-dom";
@@ -22,46 +21,34 @@ export default class Spirits extends Component {
             <div className="row">
               <div className="column">
                 <button className="ingredientName">
-                  <Link to="/random/Vodka">
-                    Vodka
-                  </Link>
+                  <Link to="/random/Vodka">Vodka</Link>
                 </button>
               </div>
               <div className="column">
-              <button className="ingredientName">
-                  <Link to="/random/Gin">
-                    Gin
-                  </Link>
+                <button className="ingredientName">
+                  <Link to="/random/Gin">Gin</Link>
                 </button>
               </div>
               <div className="column">
-              <button className="ingredientName">
-                  <Link to="/random/Whiskey">
-                    Whiskey
-                  </Link>
+                <button className="ingredientName">
+                  <Link to="/random/Whiskey">Whiskey</Link>
                 </button>
               </div>
             </div>
             <div className="row">
               <div className="column">
-              <button className="ingredientName">
-                  <Link to="/random/Rum">
-                    Rum
-                  </Link>
+                <button className="ingredientName">
+                  <Link to="/random/Rum">Rum</Link>
                 </button>
               </div>
               <div className="column">
-              <button className="ingredientName">
-                  <Link to="/random/Cognac">
-                    Cognac
-                  </Link>
+                <button className="ingredientName">
+                  <Link to="/random/Cognac">Cognac</Link>
                 </button>
               </div>
               <div className="column">
-              <button className="ingredientName">
-                  <Link to="/random/Brandy">
-                    Brandy
-                  </Link>
+                <button className="ingredientName">
+                  <Link to="/random/Brandy">Brandy</Link>
                 </button>
               </div>
             </div>
