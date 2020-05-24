@@ -12,15 +12,22 @@ export default class Home extends Component {
       <div>
         <Router>
           <Switch>
-            <Route path={"/"} exact component={Spirits} />
-            <Route path={"/quiz"} exact component={Quiz}/>
+            <Route path="/" exact component={Spirits} />
+            <Route path="/quiz" exact component={Quiz} />
             <Route
-              path={"/random/:mainSpirit"}
-              render={(props) => <Random {...props} />}
+              path="/random/:mainSpirit"
+              render={(props) => (
+                <Random mainSpirit={props.match.params.mainSpirit} />
+              )}
             ></Route>
             <Route
-              path={"/cocktail/:mainSpirit/:id"}
-              render={(props) => <Cocktail {...props} />}
+              path="/cocktail/:mainSpirit/:id"
+              render={(props) => (
+                <Cocktail
+                  mainSpirit={props.match.params.mainSpirit}
+                  cocktailId={props.match.params.id}
+                />
+              )}
             ></Route>
           </Switch>
         </Router>

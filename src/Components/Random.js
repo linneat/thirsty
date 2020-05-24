@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Redirect } from "react-router";
-import * as ReactBootStrap from 'react-bootstrap';
+import * as ReactBootStrap from "react-bootstrap";
 
 export default class Random extends Component {
   constructor(props) {
@@ -9,7 +9,7 @@ export default class Random extends Component {
     this.state = {
       error: undefined,
       cocktailId: undefined,
-      mainSpirit: props.match.params.mainSpirit,
+      mainSpirit: props.mainSpirit,
     };
   }
 
@@ -51,12 +51,24 @@ export default class Random extends Component {
 
   render() {
     if (this.state.cocktailId) {
-      return <Redirect to={"/cocktail/"+ this.state.mainSpirit+ "/" + this.state.cocktailId} />;
+      return (
+        <Redirect
+          to={
+            "/cocktail/" + this.state.mainSpirit + "/" + this.state.cocktailId
+          }
+        />
+      );
     } else if (this.state.error) {
       return <div>an error occured: {this.state.error}</div>;
     } else {
-      return <div><div><ReactBootStrap.Spinner animation="border"/></div>
-      <div>The best things in life are worth waiting for.</div></div>;;
+      return (
+        <div>
+          <div>
+            <ReactBootStrap.Spinner animation="border" />
+          </div>
+          <div>The best things in life are worth waiting for.</div>
+        </div>
+      );
     }
   }
 }

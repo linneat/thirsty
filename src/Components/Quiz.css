@@ -1,64 +1,56 @@
-
-
-.q{
-    background-color: white;
-    display:flex;
-    flex-direction: column;
-    margin: auto;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    width: 55%;
-    border-radius: 5px;
-  
+.q {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  width: 55%;
+  border-radius: 5px;
 }
 
-
-
-.radio-buttons{
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    margin-left: 15%;
-    margin-right: 10%;
-    margin-bottom: 3%;
-    margin-top: 1%;
-    
+.radio-buttons {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 15%;
+  margin-right: 10%;
+  margin-bottom: 3%;
+  margin-top: 1%;
 }
 
-.questions{
-    font-size: 19px;
-    font-weight: bold;
-    margin-top: 2%;
-    align-self: center;
+.questions {
+  font-size: 19px;
+  font-weight: bold;
+  margin-top: 2%;
+  align-self: center;
 }
 
 .QuizName {
-    margin-bottom: 6%;
-    padding-top: 0%;
-    font-family: Montserrat;
+  margin-bottom: 6%;
+  padding-top: 0%;
+  font-family: Montserrat;
 }
-.answer{
-    font-family: Roboto Condensed;
-}
-
-input{
-    margin: 2%;
+.answer {
+  font-family: Roboto Condensed;
 }
 
-.testResult{
-    margin-bottom: 3%;
-    font-weight: bold;
-    font-family: Roboto Condensed;
-
+input {
+  margin: 2%;
 }
 
-.resultButton{
-    margin-bottom: 1%;
-    border-radius: 5px;
-    border-width: thin;
-    padding-left: 2%;
-    padding-right: 2%;
-    padding-top: 1%;
-    padding-bottom: 1%;
+.testResult {
+  margin-bottom: 3%;
+  font-weight: bold;
+  font-family: Roboto Condensed;
 }
 
+.resultButton {
+  margin-bottom: 1%;
+  border-radius: 5px;
+  border-width: thin;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}

@@ -1,205 +1,190 @@
-
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Comfortaa&display=swap");
-.title{
-    font-size: 40px;
-    font-family: Montserrat;
-    color: rgb(15, 15, 15);
-    margin: auto;
-    margin-left: 0%;
+.title {
+  font-size: 40px;
+  font-family: Montserrat;
+  color: rgb(15, 15, 15);
+  margin: auto;
+  margin-left: 0%;
 }
 
-.iconAndTitleWrapper{
-    display: flex;
-    margin-top: 10vh;
+.iconAndTitleWrapper {
+  display: flex;
+  margin-top: 10vh;
 }
 
-.iconTitle{
-    align-items: center;
-    margin: auto;
-    margin-right: 0%;
-    height: 40px;
+.iconTitle {
+  align-items: center;
+  margin: auto;
+  margin-right: 0%;
+  height: 40px;
 }
 
-.slogan{
-    font-size: 20px;
-    font-family: Comfortaa;
-    font-style: italic;
-    color: rgb(54, 55, 58);
-    margin-top: 5vh;
-
+.slogan {
+  font-size: 20px;
+  font-family: Comfortaa;
+  font-style: italic;
+  color: rgb(54, 55, 58);
+  margin-top: 5vh;
 }
 
-
-
-.ingredientListWrapper{
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    width: 70%;
-    margin: auto;
-    margin-top: 11vh;
-    border-radius: 8px;
-    padding: 5vw;
-    padding-top: 2%;
-    padding-bottom: 5%;
+.ingredientListWrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 70%;
+  margin: auto;
+  margin-top: 11vh;
+  border-radius: 8px;
+  padding: 5vw;
+  padding-top: 2%;
+  padding-bottom: 5%;
 }
 
-.ingredientListHeader{
-    font-size: 3vh;
-    margin-top: 0%;
-    
+.ingredientListHeader {
+  font-size: 3vh;
+  margin-top: 0%;
 }
 
 .ingredientList a {
-    text-decoration: none;
-    color:rgb(54, 55, 58);
-
+  text-decoration: none;
+  color: rgb(54, 55, 58);
 }
 
-.ingredientList a:hover{
-    color:rgb(138, 138, 139);
+.ingredientList a:hover {
+  color: rgb(138, 138, 139);
 }
 
-
-.ingredientList{
-    margin-top: 2vh;
+.ingredientList {
+  margin-top: 2vh;
 }
 
-.ingredientName{
-    padding-top: 2.5vh;
-    padding-bottom: 5vh;
-    font-size: 3.5vh;
-    font-family: Roboto Condensed;
-    color:rgb(54, 55, 58);;
-    border-width: thin;
-    margin-left: 2vw;
-    margin-right: 2vw;
-    margin-top: 3vh;
-    border-radius: 10px;
+.ingredientName {
+  padding-top: 2.5vh;
+  padding-bottom: 5vh;
+  font-size: 3.5vh;
+  font-family: Roboto Condensed;
+  color: rgb(54, 55, 58);
+  border-width: thin;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  margin-top: 3vh;
+  border-radius: 10px;
 }
 
 .row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-  }
-  
-  .column {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
-  }
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
 
-  .ingredientName{
-      padding-bottom: 3vh;
-  }
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
 
-  .textToQuizLink{
-      margin-top: 1%;
-      font-family: Roboto Condensed;
-  }
+.ingredientName {
+  padding-bottom: 3vh;
+}
 
-  .textToQuizLink a{
-      color: rgb(197, 145, 78);
-      font-weight: bold;
-     
-  }
+.textToQuizLink {
+  margin-top: 1%;
+  font-family: Roboto Condensed;
+}
 
-  .textToQuizLink a:hover{
-      color: rgb(117, 117, 117);
-  }
+.textToQuizLink a {
+  color: rgb(197, 145, 78);
+  font-weight: bold;
+}
 
+.textToQuizLink a:hover {
+  color: rgb(117, 117, 117);
+}
 
 /* responsive*/
 /* for phones max-width 414px --> the biggest iphones */
 @media screen and (max-width: 414px) {
-    .title{
-        margin-top: 5vh;
-        font-size: pvw;
-    }
-    
-    .slogan{
-        font-size: 4vw;
-    }
+  .title {
+    margin-top: 5vh;
+    font-size: pvw;
+  }
 
-    .iconAndTitleWrapper {
-        margin-top: 3vh;
-    }
+  .slogan {
+    font-size: 4vw;
+  }
 
-    .iconTitle {
-        margin-bottom: 3px;
-    }
+  .iconAndTitleWrapper {
+    margin-top: 3vh;
+  }
 
-    .row{
-        flex-direction: column;
-    }
+  .iconTitle {
+    margin-bottom: 3px;
+  }
 
-    h2{
-        font-size: 3.4vh;
-    }
+  .row {
+    flex-direction: column;
+  }
 
-    .ingredientName{
-        font-size: 3vh;
-    }
+  h2 {
+    font-size: 3.4vh;
+  }
 
-    .ingredientListWrapper {
-        width: 65%;
-    }
+  .ingredientName {
+    font-size: 3vh;
+  }
+
+  .ingredientListWrapper {
+    width: 65%;
+  }
 }
-
-
 
 /* for phones max-width 1024px --> for ipads*/
 @media screen and (min-device-width: 415px) and (max-width: 1024px) {
-    .title {
-        font-size: 45px;
-    }
+  .title {
+    font-size: 45px;
+  }
 
-    .ingredientListHeader {
-        font-size: 26px;
-       
-    }
+  .ingredientListHeader {
+    font-size: 26px;
+  }
 
-    h2 {
-        margin-bottom: 2%;
-        font-size: 2.5vh;
-    }
+  h2 {
+    margin-bottom: 2%;
+    font-size: 2.5vh;
+  }
 
-    .slogan {
-        font-size: 2.5vh;
-    }
+  .slogan {
+    font-size: 2.5vh;
+  }
 
-    .ingredientName{
-        font-size: 3vh;
-    }
+  .ingredientName {
+    font-size: 3vh;
+  }
 }
-
 
 /* ipad pro*/
 @media screen and (min-device-width: 769px) and (max-width: 1024px) {
-    .title {
-        font-size: 5vh;
-    }
+  .title {
+    font-size: 5vh;
+  }
 
-    .iconTitle {
-        height: 5vh;
-    }
+  .iconTitle {
+    height: 5vh;
+  }
 
-    .slogan {
-        font-size: 2.6;
-    }
+  .slogan {
+    font-size: 2.6;
+  }
 
-    h2{
-        font-size: 2.5vh;
-    }
-
-   
+  h2 {
+    font-size: 2.5vh;
+  }
 }
 
 /*random size of screen between mobile size and ipad size*/
 @media screen and (min-device-width: 415px) and (max-width: 680px) {
-}  
+}

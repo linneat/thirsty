@@ -1,17 +1,17 @@
 import React, { Component } from "react";
 import "./Cocktail.css";
 import { Link } from "react-router-dom";
-import * as ReactBootStrap from 'react-bootstrap';
+import * as ReactBootStrap from "react-bootstrap";
 
 export default class Cocktail extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      error : undefined,
+      error: undefined,
       recipe: undefined,
-      cocktailId: props.match.params.id,
-      mainSpirit: props.match.params.mainSpirit,
+      cocktailId: props.cocktailId,
+      mainSpirit: props.mainSpirit,
     };
   }
 
@@ -65,8 +65,14 @@ export default class Cocktail extends Component {
     if (this.state.error) {
       return <div>an error occured: {this.state.error}</div>;
     } else if (this.state.recipe === undefined) {
-      return <div><div><ReactBootStrap.Spinner animation="border" /></div>
-      <div>The best things in life are worth waiting for.</div></div>;
+      return (
+        <div>
+          <div>
+            <ReactBootStrap.Spinner animation="border" />
+          </div>
+          <div>The best things in life are worth waiting for.</div>
+        </div>
+      );
     } else {
       return (
         <div>
@@ -80,7 +86,9 @@ export default class Cocktail extends Component {
               <h1 className="cocktailName">{this.state.recipe.name}</h1>
               <div className="nexRandomWrap">
                 <Link to={"/random/" + this.state.mainSpirit}>
-                  <button className="nextRandom">New {this.state.mainSpirit.toLowerCase()} cocktail</button>
+                  <button className="nextRandom">
+                    New {this.state.mainSpirit.toLowerCase()} cocktail
+                  </button>
                 </Link>
               </div>
             </div>
