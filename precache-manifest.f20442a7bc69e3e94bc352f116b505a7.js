@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d8428661215bd6aae001b5d209db2464",
+    "revision": "06fadeef0af34cc7fdfdaa62750b6765",
     "url": "/thirsty/index.html"
   },
   {
-    "revision": "a6977385aa6d4955de36",
-    "url": "/thirsty/static/css/main.26b9a7d9.chunk.css"
+    "revision": "8b2df23c592e54b4a47b",
+    "url": "/thirsty/static/css/main.1501acb6.chunk.css"
   },
   {
     "revision": "cb401fc0eefc46986ee1",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/thirsty/static/js/2.b57e73de.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a6977385aa6d4955de36",
+    "revision": "8b2df23c592e54b4a47b",
     "url": "/thirsty/static/js/main.15cbdd15.chunk.js"
   },
   {
