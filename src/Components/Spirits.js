@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./Spirits.css";
 import Icon from "./icon.png";
 import { Link } from "react-router-dom";
+import MainSpiritButton from "./MainSpiritButton";
 
 export default class Spirits extends Component {
   render() {
@@ -19,38 +20,14 @@ export default class Spirits extends Component {
 
           <div className="ingredientList">
             <div className="row">
-              <div className="column">
-                <button className="ingredientName">
-                  <Link to="/random/Vodka">Vodka</Link>
-                </button>
-              </div>
-              <div className="column">
-                <button className="ingredientName">
-                  <Link to="/random/Gin">Gin</Link>
-                </button>
-              </div>
-              <div className="column">
-                <button className="ingredientName">
-                  <Link to="/random/Whiskey">Whiskey</Link>
-                </button>
-              </div>
+              <MainSpiritButton ingredient="Vodka" />
+              <MainSpiritButton ingredient="Gin" />
+              <MainSpiritButton ingredient="Whiskey" />
             </div>
             <div className="row">
-              <div className="column">
-                <button className="ingredientName">
-                  <Link to="/random/Rum">Rum</Link>
-                </button>
-              </div>
-              <div className="column">
-                <button className="ingredientName">
-                  <Link to="/random/Cognac">Cognac</Link>
-                </button>
-              </div>
-              <div className="column">
-                <button className="ingredientName">
-                  <Link to="/random/Brandy">Brandy</Link>
-                </button>
-              </div>
+              <MainSpiritButton ingredient="Rum" />
+              <MainSpiritButton ingredient="Cognac" />
+              <MainSpiritButton ingredient="Brandy" />
             </div>
           </div>
         </div>
